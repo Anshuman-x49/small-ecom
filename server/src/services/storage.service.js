@@ -1,0 +1,25 @@
+import ImageKit, { toFile } from "@imagekit/nodejs";
+import config from "../config/config.js";
+import { v4 as uuidv4 } from "uuid";
+
+const client = new ImageKit({
+  privateKey: config.imagekit_private_key,
+});
+
+export const uploadProductService = async ({ image }) => {
+  try {
+    const fileName = `${uuidv4()}-${image.originalname}`;
+
+    const file = await toFile(image.buffer, fileName);
+
+    const response = await client.files.upload({
+      file,
+      fileName,
+      folder: "small-ecom",
+    });
+
+    return response;
+  } catch (error) {
+    throw error;
+  }
+};

@@ -33,10 +33,10 @@ router.post("/login", loginValidator, userLoginController);
 /**
  * @description Route for user refresh token
  * @method POST
- * @url /api/auth/refresh-token
+ * @url /api/auth/refresh
  * @access protected
  */
-router.post("/refresh-token", userRefreshTokenController);
+router.post("/refresh", userRefreshTokenController);
 
 /** 
  * @description Route to get current logged in user

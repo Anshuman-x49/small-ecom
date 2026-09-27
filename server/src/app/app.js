@@ -12,6 +12,6 @@ app.use(cookieParser());
 
 //routes
 app.use("/api/auth", authRoutes);
-app.use("/api/products", productRoutes);
+app.use("/api/product", productRoutes);
 
 export default app;

@@ -3,7 +3,7 @@ import axios from "axios";
 /**
  * Base URL for the API.
  */
-const API_BASE_URL = import.meta.env.VITE_API_URL ?? "/api";
+const API_BASE_URL = import.meta.env.VITE_API_URL;
 
 // In-memory token store — cleared on page refresh (intentional)
 let _accessToken = null;

@@ -136,7 +136,7 @@ VITE_API_URL=http://localhost:3000/api
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/small-ecom.git
+git clone [https://github.com/your-username/small-ecom.git](https://github.com/Anshuman-x49/small-ecom)
 cd small-ecom
 ```
 

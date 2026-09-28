@@ -1,6 +1,6 @@
 # Small Ecom 🛍️
 
-A full-stack, modern e-commerce application built with **React 19**, **Vite**, **Express 5**, and **MongoDB**. Featuring a tactile claymorphic design system, role-based access control (Buyer & Seller), JWT authentication with automated token refresh, and cloud media management via ImageKit.
+A full-stack, modern e-commerce application built with **React 19**, **Vite**, **Express 5**, and **MongoDB**. Featuring a tactile claymorphic design system, role-based access control (Buyer & Seller)[...]
 
 ---
 
@@ -136,7 +136,7 @@ VITE_API_URL=http://localhost:3000/api
 
 ### 1. Clone the repository
 ```bash
-git clone [https://github.com/your-username/small-ecom.git](https://github.com/Anshuman-x49/small-ecom)
+git clone https://github.com/Anshuman-x49/small-ecom.git
 cd small-ecom
 ```
 

@@ -9,7 +9,7 @@ const app = express();
 //middlewares
 app.use(
   cors({
-    origin: config.client_url,
+    origin: config.client_url?.replace(/\/$/, ""),
     credentials: true,
   }),
 );

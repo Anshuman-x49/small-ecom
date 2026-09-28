@@ -1,6 +1,6 @@
 # Small Ecom 🛍️
 
-A full-stack, modern e-commerce application built with **React 19**, **Vite**, **Express 5**, and **MongoDB**. Featuring a tactile claymorphic design system, role-based access control (Buyer & Seller)[...]
+A full-stack, modern e-commerce application built with **React 19**, **Vite**, **Express 5**, and **MongoDB**. Featuring a tactile claymorphic design system, role-based access control (Buyer & Seller), JWT authentication with automated token refresh, and cloud media management via ImageKit.
 
 ---
 

@@ -57,6 +57,7 @@ const userRegisterController = async (req, res) => {
           email: user.email,
           name: user.name,
           id: user._id,
+          role: user.role,
         },
       },
     });
@@ -138,6 +139,7 @@ const userLoginController = async (req, res) => {
           email: user.email,
           name: user.name,
           id: user._id,
+          role: user.role,
         },
         accessToken,
       },
@@ -215,7 +217,7 @@ const userRefreshTokenController = async (req, res) => {
     //set new refresh token in cookie
     res.cookie("refreshToken", newRefreshToken, {
       httpOnly: true,
-      secure: true,
+      secure: false,
       sameSite: "strict",
       maxAge: 7 * 24 * 60 * 60 * 1000,
     });
@@ -227,6 +229,7 @@ const userRefreshTokenController = async (req, res) => {
           email: user.email,
           name: user.name,
           id: user._id,
+          role: user.role,
         },
         accessToken,
       },
@@ -260,6 +263,7 @@ const getUserController = async (req, res) => {
         email: user.email,
         name: user.name,
         id: user._id,
+        role: user.role,
       },
     },
   });

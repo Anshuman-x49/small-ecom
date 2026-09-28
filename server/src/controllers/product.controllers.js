@@ -53,7 +53,7 @@ const getAllProductController = async (req, res) => {
   try {
     const product = await productModel.find();
 
-    if (!product && product.length === 0) {
+    if (!product || product.length === 0) {
       return res.status(404).json({
         message: "No products found",
       });

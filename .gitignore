@@ -3,4 +3,3 @@ dist
 .env
 .env.*
 .vercel
-package-lock.json
